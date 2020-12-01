@@ -1,3 +1,5 @@
+# hex grid
+
 class Day11
   class << self
     def calc(input)

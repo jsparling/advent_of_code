@@ -1,4 +1,4 @@
-
+# hash
 class Day10
   class << self
     def calc(input)
@@ -110,6 +110,7 @@ input = "1,2,3"
 input = "1,2,4"
 input = "187,254,0,81,169,219,1,190,19,102,255,56,46,32,2,216"
 
+input = "flqrgnkx-1"
 Day10.calc(input)
 
 # puts Day10.xor_string([65,27,9,1,4,3,40,50,91,7,6,0,2,5,68,22,65,27,9,1,4,3,40,50,91,7,6,0,2,5,68,22])
