@@ -1,4 +1,4 @@
 Benchee.run(%{
-  "orig"      => fn -> Dec1.perform_step_2_old end,
-  "optimized" => fn -> Dec1.perform_step_2 end
+  "orig"      => fn -> Dec11.perform end,
+  "optimized" => fn -> Dec11Optim.perform end
 })

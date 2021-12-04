@@ -5,6 +5,13 @@ defmodule Util do
     |> Enum.map(&ensure_integer/1)
   end
 
+  def file_lines_separated_by_blank_line(filename) do
+    {:ok, contents} = File.read(filename)
+
+    contents
+    |> String.split("\n\n", trim: true)
+  end
+
   def file_lines(filename) do
     {:ok, contents} = File.read(filename)
 
@@ -19,6 +26,10 @@ defmodule Util do
       value
       |> String.to_integer
     end
+  end
+
+  def print(value, label) do
+    IO.inspect value, label: label, charlists: :as_lists
   end
 
 end
